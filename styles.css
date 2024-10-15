@@ -41,6 +41,7 @@ body {
     transform: rotate(calc(-30deg * var(--i)));
     display: inline-block;
     font-size: 20px;
+    color: #fff;
 }
 
 .clock::before {
@@ -49,5 +50,21 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: #000;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.hand i {
+    position: absolute;
+    background-color: var(--clr);
+    width: 4px;
+    height: var(--h);
+    border-radius: 1px;
 }
